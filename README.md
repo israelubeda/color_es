@@ -20,8 +20,8 @@ example.py
 import color_latam
 
 palabra = input("Ingresa una palabra: ")
-resultado = color.rojo(palabra)
-resul = color.verde(palabra)
+resultado = color_latam.rojo(palabra)
+resul = color_latam.verde(palabra)
 
 
 print(resultado)
@@ -30,4 +30,12 @@ print(resul)
 
 ~~~
 
+##Colores disponibles
+
+_rojo_
+_verde_
+_amarillo_
+_azul_
+_negro_
+_magenta_
 
