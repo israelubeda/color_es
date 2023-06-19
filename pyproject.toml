@@ -2,7 +2,7 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
-name = "color_es"
+name = "color_latam"
 version = "0.0.1"
 authors = [
   { name="Israel Ubeda", email="israel.ubedabravo@gmail.com" },
