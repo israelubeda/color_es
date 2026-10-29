@@ -1,21 +1,74 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
+
 [project]
-name = "color_latam"
-version = "0.0.2"
+name = "color-latam"
+dynamic = ["version"]
+description = "Colorea texto de terminal con una API sencilla en español"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
-  { name="Israel Ubeda", email="israel.ubedabravo@gmail.com" },
+  { name = "Israel Ubeda", email = "israel.ubedabravo@gmail.com" },
 ]
-description = "Libreria que cambia el color del texto en español"
-readme = "README.md"
-requires-python = ">=3.7"
+keywords = ["ansi", "color", "consola", "español", "terminal"]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Terminals",
+  "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2",
+  "pytest>=8",
+  "ruff>=0.8",
+  "twine>=5",
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/israelubeda/color_es"
-"Bug Tracker" = "https://github.com/israelubeda/color_es"
+Homepage = "https://github.com/israelubeda/color_es"
+Repository = "https://github.com/israelubeda/color_es.git"
+Issues = "https://github.com/israelubeda/color_es/issues"
+Changelog = "https://github.com/israelubeda/color_es/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/color_latam"]
+
+[tool.hatch.version]
+path = "src/color_latam/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/CHANGELOG.md",
+  "/LICENSE",
+  "/README.md",
+  "/pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
