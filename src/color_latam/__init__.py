@@ -7,6 +7,8 @@ from .color_latam import (
     azul,
     blanco,
     cian,
+    color_hex,
+    color_rgb,
     colorear,
     magenta,
     negro,
@@ -14,7 +16,7 @@ from .color_latam import (
     verde,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "COLORES",
@@ -23,6 +25,8 @@ __all__ = [
     "azul",
     "blanco",
     "cian",
+    "color_hex",
+    "color_rgb",
     "colorear",
     "magenta",
     "negro",

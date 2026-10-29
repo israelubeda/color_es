@@ -6,6 +6,16 @@ y las versiones siguen [Semantic Versioning](https://semver.org/lang/es/).
 
 ## [Sin publicar]
 
+## [0.1.1] - 2026-10-29
+
+### Añadido
+
+- Colores personalizados de 24 bits con `color_rgb()`.
+- Colores hexadecimales largos y cortos con `color_hex()`.
+- Soporte para aplicar colores personalizados al fondo y combinarlos con
+  negrita o subrayado.
+- Validación descriptiva de componentes RGB y códigos hexadecimales.
+
 ## [0.1.0] - 2026-10-29
 
 ### Añadido
@@ -24,5 +34,6 @@ y las versiones siguen [Semantic Versioning](https://semver.org/lang/es/).
 
 - Se conservan las funciones públicas de la versión 0.0.2.
 
-[Sin publicar]: https://github.com/israelubeda/color_es/compare/v0.1.0...HEAD
+[Sin publicar]: https://github.com/israelubeda/color_es/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/israelubeda/color_es/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/israelubeda/color_es/compare/v0.0.2...v0.1.0

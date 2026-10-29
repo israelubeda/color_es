@@ -52,6 +52,29 @@ print(enlace)
 El nombre del color no distingue mayúsculas, minúsculas ni espacios exteriores.
 Un nombre desconocido genera `ValueError` con la lista de opciones disponibles.
 
+## Colores personalizados
+
+Para usar cualquier color compatible con tu identidad visual, `color_rgb()` y
+`color_hex()` generan colores reales de 24 bits (*True Color*):
+
+```python
+from color_latam import color_hex, color_rgb
+
+print(color_hex("Naranja de marca", "#ff8800", negrita=True))
+print(color_rgb("Morado personalizado", 102, 51, 153))
+```
+
+También puedes aplicar el color al fondo:
+
+```python
+from color_latam import color_hex
+
+print(color_hex(" DESTACADO ", "#2563eb", fondo=True, negrita=True))
+```
+
+La notación hexadecimal acepta tanto `#RRGGBB` como la forma corta `#RGB`, con
+o sin `#`. Cada componente RGB debe estar entre `0` y `255`.
+
 ## Colores disponibles
 
 | Nombre | Función directa |
@@ -68,7 +91,8 @@ Un nombre desconocido genera `ValueError` con la lista de opciones disponibles.
 > [!NOTE]
 > La apariencia exacta depende del tema y de la compatibilidad ANSI de la
 > terminal. El negro, por ejemplo, puede resultar invisible sobre un fondo
-> oscuro.
+> oscuro. Los colores personalizados requieren una terminal compatible con
+> *True Color*.
 
 ## Desarrollo
 
