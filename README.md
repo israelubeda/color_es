@@ -1,6 +1,6 @@
 # color-latam
 
-[![PyPI](https://img.shields.io/pypi/v/color-latam)](https://pypi.org/project/color-latam/)
+[![PyPI v0.1.1](https://img.shields.io/badge/PyPI-v0.1.1-blue?logo=pypi&logoColor=white)](https://pypi.org/project/color-latam/0.1.1/)
 [![Python](https://img.shields.io/pypi/pyversions/color-latam)](https://pypi.org/project/color-latam/)
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](https://github.com/israelubeda/color_es/blob/main/LICENSE)
 
