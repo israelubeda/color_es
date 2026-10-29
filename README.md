@@ -89,21 +89,6 @@ python -m build
 twine check dist/*
 ```
 
-## Publicación en PyPI
-
-El repositorio incluye un flujo de GitHub Actions preparado para publicación
-confiable, sin guardar tokens de PyPI. Antes de la primera versión:
-
-1. Crea el proyecto o un *pending publisher* en PyPI.
-2. Configura como propietario `israelubeda`, repositorio `color_es`, workflow
-   `publish.yml` y entorno `pypi`.
-3. Crea en GitHub un entorno llamado `pypi`.
-4. Actualiza `__version__` en `src/color_latam/__init__.py`.
-5. Publica una release de GitHub. El workflow construirá, comprobará y subirá
-   los artefactos automáticamente.
-
-PyPI no permite reutilizar un número de versión ya publicado.
-
 ## Licencia
 
 Distribuido bajo la [licencia MIT](https://github.com/israelubeda/color_es/blob/main/LICENSE).
